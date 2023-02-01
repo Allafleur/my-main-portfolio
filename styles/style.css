@@ -1,0 +1,259 @@
+:root{
+    --primary-color: beige;
+    --secondary-color: #3b39a0;
+    --font-family-main: 'Poppins', sans-serif;
+    --font-family-secondary: 'Playfair Display', serif;
+}
+
+.nav-right{
+  
+}
+.bg-green{
+    background-color:#264b50;
+    color: beige;
+}
+
+body{
+    background-color: #264b50; 
+}
+
+h1{
+    font-family: var(--font-family-secondary);
+    color: #F9F7FE;
+}
+p, h2, h3, h4, ul{
+    font-family: var(--font-family-main);
+    color: var(--primary-color) ;
+}
+
+h3{
+    font-family: var(--font-family-secondary);
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero{
+    background-image: linear-gradient(rgba(20, 112, 35, 0.3), rgba(35, 116, 75, 0.3)), 
+       url("../images/header-image.jpeg");
+ 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.hero p{
+    font-family: var(--font-family-main);
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+}
+.hero h1{
+    font-weight: bold;
+    font-size: 96px;
+}
+
+.hero h2{
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+.btn-main{
+    margin: 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 20px;
+    padding: 18px 30px;
+    font-family: var(--font-family-main);
+    font-size: 18px;
+    transition: all 100ms ease-in-out;
+}
+
+.btn-main:hover {
+    color:  var(--secondary-color);
+    background-color: beige;
+}
+
+.btn-detail{
+    margin-top: 20px;
+    color:var(--secondary-color);
+    border-radius: 4px;
+    padding: 18px 30px;
+    font-family: var(--font-family-main);
+    font-size: 18px;
+    border: 1px solid var(--secondary-color) ;
+}
+.content p{
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.content h2{
+    font-family: var(--font-family-secondary);
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 85px;
+    margin-bottom: 55px;
+    margin-top: 20px;
+}
+p.text{
+    font-size: 16px;
+    text-align: left;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.content-container{
+    padding: 60px 20px;
+}
+
+.about-content{
+    margin: 30px;
+}
+
+.content-container h1{
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 85px;
+}
+
+.content-container h2{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color);
+    line-height: 27px;
+}
+
+.content-container p{
+    font-size: 16px;
+    color: var(--primary-color);
+    opacity: 0.7;
+
+}
+
+.content-container h3{
+    font-weight: bold;
+    font-size: 24px;
+   
+}
+
+.content-container p{
+    font-weight: normal;
+    font-size: 14px;
+   
+}
+
+.left{
+    margin-left: 40px;
+}
+
+.contact-content{
+    text-align: center;
+}
+
+.logo{
+    max-height: 42px;
+      
+}
+nav li{
+    display: inline;
+    list-style: none;
+    line-height: 42px;
+    margin-left: 15px;
+    
+
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all 100ms ease-in-out;
+}
+
+
+nav a:hover,
+.active a {
+    color:  var(--secondary-color);
+}
+
+.menu{
+   padding: 20px 0;
+}
+
+.contact-box{
+    background-color: rgb(207, 230, 213);
+    padding: 30px 120px;
+    border-radius: 10px;
+}
+
+
+.contact-box p{
+    margin: 0;
+}
+
+footer h3{
+    color: #272142;
+}
+
+footer .email-link{
+    font-size: 24px;
+    font-family: var(--font-family-main);
+    color: #272142;
+    text-decoration: none;
+}
+
+footer .email-link:hover{
+    color: var(--secondary-color);
+}
+
+footer .social-links a{
+    margin: 0 20px;
+    color: var(--secondary-color);
+    font-size: 18px;
+    background-color: #F9F7FE;
+    padding: 12px 18px;
+    border-radius: 50%;
+    transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover{
+    color:beige;
+    background-color: var(--secondary-color);
+}
+
+@media (max-width:900px) {
+   
+    .hero h1{
+        font-size: 44px;
+    }
+    .content h2{
+        font-size: 40px;
+        margin: auto;
+        line-height: 1.5;
+        text-align: center;
+    }
+    p.text{
+        margin: 20px 10px;
+        text-align: center;
+    }
+    .btn-detail{
+      display: block;
+    }
+
+    .content-container{
+        text-align: center;
+        padding: 0;
+    }
+
+    .image-small{
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+    .projects{
+        max-width: 400px;
+    }
+}
