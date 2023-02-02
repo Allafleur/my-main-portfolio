@@ -80,14 +80,14 @@ h3{
     background-color: var(--primary-color);
 }
 
-.btn-detail{
+.btn-detail, .btn-detail a {
     margin-top: 20px;
-    color: var(--btn-color);
+    color: beige;
     border-radius: 5px;
     padding: 18px 30px;
     font-family: var(--font-family-main);
     font-size: 18px;
-    border: 2px solid var(--secondary-color);
+    border: 2px solid var(--primary-color);
     transition: all 100ms ease-in-out;
    
 }
@@ -254,12 +254,14 @@ footer .social-links a:hover{
     .hero h1{
         font-size: 44px;
     }
-    .content h2{
-        font-size: 40px;
+    h2{
+        font-size: 24px;
         margin: auto;
         line-height: 1.5;
         text-align: center;
     }
+    
+    
     p.text{
         margin: 20px 10px;
         text-align: center;
