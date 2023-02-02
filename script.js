@@ -3,8 +3,8 @@ document.getElementById("myfooter").innerHTML =
     <footer>
     <div class="justify-content-between contact-box d-none d-md-flex mb-5">
         <div>
-            <h3 class="mt-4">Work Inquiry</h3>
-            <p>Let's work  together</p>
+            <h3 class="mt-4"> Let's work together! </h3>
+            <p class="ps-2">Work Inquiry</p>
         </div>
         <div>
             <a href="contact.html" class="btn btn-main mt-4" title="Contact Alla Sydorenko">Contact me</a>
