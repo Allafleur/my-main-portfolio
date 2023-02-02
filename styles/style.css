@@ -1,27 +1,29 @@
 :root{
     --primary-color: beige;
     --secondary-color: #3b39a0;
+    --navbar-color: #00204a;
     --font-family-main: 'Poppins', sans-serif;
     --font-family-secondary: 'Playfair Display', serif;
 }
 
-.nav-right{
-  
-}
 .bg-green{
-    background-color:#264b50;
-    color: beige;
+    background-color: var(--navbar-color);
+    color: #fce38a;
 }
 
 body{
-    background-color: #264b50; 
+    background-color: #272343; 
 }
 
 h1{
     font-family: var(--font-family-secondary);
     color: #F9F7FE;
 }
-p, h2, h3, h4, ul{
+
+p{
+    color: #fce38a;
+}
+ h2, h3, h4, ul{
     font-family: var(--font-family-main);
     color: var(--primary-color) ;
 }
@@ -35,7 +37,6 @@ h3{
 .hero{
     background-image: linear-gradient(rgba(20, 112, 35, 0.3), rgba(35, 116, 75, 0.3)), 
        url("../images/header-image.jpeg");
- 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,6 +72,7 @@ h3{
     font-family: var(--font-family-main);
     font-size: 18px;
     transition: all 100ms ease-in-out;
+   
 }
 
 .btn-main:hover {
@@ -180,12 +182,16 @@ nav a:hover,
     color:  var(--secondary-color);
 }
 
+.btn-main .work{
+    text-align: center;
+    color: red;
+}
 .menu{
    padding: 20px 0;
 }
 
 .contact-box{
-    background-color: rgb(207, 230, 213);
+    background-color: var(--navbar-color);
     padding: 30px 120px;
     border-radius: 10px;
 }
@@ -195,14 +201,10 @@ nav a:hover,
     margin: 0;
 }
 
-footer h3{
-    color: #272142;
-}
-
 footer .email-link{
     font-size: 24px;
     font-family: var(--font-family-main);
-    color: #272142;
+    color: blueviolet;
     text-decoration: none;
 }
 
@@ -225,6 +227,16 @@ footer .social-links a:hover{
     background-color: var(--secondary-color);
 }
 
+.main-image{
+    max-width: 400px;
+    border-radius: 10px;
+    
+}
+
+.projects{
+    max-width: 600px;
+    border-radius: 20px;
+}
 @media (max-width:900px) {
    
     .hero h1{
@@ -250,7 +262,8 @@ footer .social-links a:hover{
     }
 
     .image-small{
-        max-width: 350px;
+        max-width: 200px;
+        max-height: 40px;
         margin-bottom: 20px;
     }
     .projects{
